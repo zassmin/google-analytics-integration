@@ -4,6 +4,7 @@ class @GoogleAnalytics
 # Google Analytics depends on a global _gaq array. window is the global scope.
     window._gaq = []
     window._gaq.push ["_setAccount", GoogleAnalytics.analyticsId()]
+    window._gaq.push ["require", "autotrack"]
 
     # Create a script element and insert it in the DOM
     ga = document.createElement("script")
